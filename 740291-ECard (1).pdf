@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MediBuddy Your e-gateway to Medi Assist services</title>
+    <link rel="canonical" href="https://portal.medibuddy.in/" />
+    <meta name="description" content="Welcome to MediBuddy, Your e-gateway to Medi Assist services. We constantly endeavour to manage your health benefits portfolio." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/app-min.css?v=1">
+    <link rel="stylesheet" href="css/home.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+    <meta http-equiv="cache-control" content="private" />
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <!--
+    [if lt IE 10]>
+    	<script src="vendors/ie/html5shiv.js"></script>
+    	<script src="vendors/ie/respond.min.js"></script>
+    	<style(type='text/css')>
+    		.animate, .hover-bounce, .hover-flash, .hover-heartbeat, .hover-panic, .hover-pulsate, .hover-pulse, .hover-shakeH, .hover-shakeV, .hover-slingshotCCW, .hover-slingshotCW, .hover-spinCCW, .hover-spinCW, .hover-strobe, .hover-tada, .hover-wave, .hover-wobble, .trigger {opacity:1!important;}
+    	</style>
+    <![endif]
+    -->
+    <style>
+        #password {
+            -webkit-text-security: disc;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    [if lt IE 8]>
+    	p.browsehappy
+    		| You are using an <strong>outdated</strong> browser.
+    		| Please <a href="http://browsehappy.com/">upgrade your browser</a>
+    		| to improve your experience.
+    <![endif]
+
+    -->
+    <div class="signin">
+        <div class="col-xs-8">
+            <iframe src="MImages/Loginpage/MANotification.html" id="maNotification"></iframe>
+        </div>
+        <div class="col-xs-4">
+            <div class="signin-form">
+                <img src="img/MediBuddy_Logo.png" alt="MediBuddy" class="logo">
+                <p id="content">
+                    Please <a href="javascript:void(0)" rel="#knowmmore" data-width="60%" class="slide-box-open">Click here</a> to know more about Medi Assist Services
+                </p>
+                <form method="post" action="./Home.aspx?ReturnUrl=http%3a%2f%2fportal.medibuddy.in%2fGenerateECard.aspx" id="MediForm" class="form-signin" autocomplete="off">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODAyNDc3NTc4ZGSPESULZ8et6fmGnXNkB/83EvebTA==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8D0E13E6" />
+</div>
+                    <input id="hiddenusername" style="display: none" type="text" name="fakeusernameremembered">
+                    <input id="hiddenpassword" style="display: none" type="password" name="fakepasswordremembered">
+                    <label id="lblSignin">Sign in</label>
+                    
+                    <label id="ErrorMsg"></label>
+                    <div id="ErrorMsgAuth"></div>
+                    <label for="username">Username : </label>
+                    <input name="USERID" id="username" placeholder="Username" required="" class="form-control" autocomplete="new-password" oninput="checkSSOCorproateorNot();">
+                    <label for="password" id="lblpassword">Password :</label>
+                    <input name="PASSWORD" id="password" type="password" placeholder="Password"
+                        class="form-control" autocomplete="new-password" readonly onfocus="$(this).removeAttr('readonly');">
+
+                    
+
+                    <button type="submit" id="signinBtn" class="btn btn-lg btn-primary btn-block">Sign in</button>
+                    <p class="feature" id="ForgotCredentials">
+                        <a href="/ForgotUsername.aspx">Forgot your Username?</a><br />
+                        <a href="/ForgetPassword.aspx">Forgot your Password?</a>
+                    </p>
+                </form>
+                
+
+                <h1><a href="https://www.mediassistindia.com/ecashless/" target="_blank">eCashless</a>
+                    gives you the power to get a provisional preauthorization even before you walk into the hospital.
+                </h1>
+				<a href="http://www.medibuddy.in/legal/Privacy-Policy/TPA" target="_blank">Privacy policy</a> of Medi Assist Healthcare Services Limited.
+                <div style="color: #a29a9a; text-align: right;">
+                    Version 3.7.4
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="knowmmore" class="slideBox">
+        <div class="slideBg"></div>
+        <div class="slideContent">
+            <h1 class="slideHeading"><a href="javascript:void(0)" class="back"><i class="fa fa-angle-double-right"></i></a>Welcome to MediBuddy, your personal health buddy!
+            </h1>
+            <p>Download the MediBuddy Mobile App to access health benefits on-the-go. Give a missed to <strong>1800 3010 1696</strong> to get your app.</p>
+            <ul id="tabs" class="nav nav-pills nav-justified" role="tablist">
+                <li class="active"><a data-toggle="tab" href="#faq1">Manage Hospitalization</a></li>
+                <li><a data-toggle="tab" href="#faq2">Manage Claims</a></li>
+                <li><a data-toggle="tab" href="#faq3">Stay Healthy</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="faq1">
+                    <h4>Hospitalization can be of two types:</h4>
+                    <ul>
+                        <li><strong>Planned Hospitalization:</strong> This happens when you have ample time to plan your admission to the hospital. For example, if your doctor advises a surgery for hernia anytime in the next few weeks, you have time to plan your hospitalization</li>
+                        <li><strong>Emergency Hospitalization:</strong> This happens typically in case of emergencies, such as a road traffic accident. One cannot plan for such hospitalization.</li>
+                    </ul>
+                    <h4>MediBuddy empowers you to manage you hospitalization with great ease. With MediBuddy, you can:</h4>
+                    <ul>
+                        <li><strong>Choose your preferred network hospital</strong> with full visibility into specialties, room types, rates, packages and discounted tariffs, etc.
+                            <br>
+                            <a href="https://www.youtube.com/watch?v=IwxrvwBmlXs&amp;list=PLZdcQVzgy3f9rgAT51yfNOBi0SFwnSsgP&amp;index=1">Watch this video</a> to learn more about the powerful network hospital search capability on MediBuddy.</li>
+                        <li><strong>Opt for <a href="https://www.mediassistindia.com/insured/#toggle-id-8">cashless hospitalization</a></strong> and thus minimize out of pocket spend</li>
+                        <li>Avail the benefit of <strong>repriced tariffs and discounted packages</strong> contracted by Medi Assist with network hospitals and thus reduce your overall cost of care.</li>
+                        <li><strong>Plan a hassle-free <a href="https://www.mediassistindia.com/ecashless/">eCashless hospitalization</a></strong> from the comfort of your home without having to visit the hospital.<br>
+                            <a href="https://www.youtube.com/watch?v=T1zfNkHjcUs&amp;list=PLZdcQVzgy3f9rgAT51yfNOBi0SFwnSsgP&amp;index=8">Watch this video</a> to learn more about eCashless or <a href="https://m.medibuddy.in/submitecashless.aspx">submit your first eCashless here</a>.</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade in" id="faq2">
+                    <h4>Depending on the situation and your policy coverage, you can make two types of health insurance claims:</h4>
+                    <ul>
+                        <li><strong>Cashless:</strong> The essence of cashless hospitalization is that the insured need not make an upfront payment to the hospital at the time of admission.</li>
+                        <li><strong>Reimbursement:</strong> A reimbursement claim is one where you pay all the expenses related to the hospitalization of the insured and claim a reimbursement of your expenses after discharge.</li>
+                    </ul>
+                    <h4>Cashless claims</h4>
+                    <p>Cashless hospitalization can be availed only at a Medi Assist network hospital and upon approval of your pre-authorization application. Click here, for details of availing <a href="https://www.mediassistindia.com/insured/#toggle-id-8">cashless hospitalization.</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=IwxrvwBmlXs&amp;list=PLZdcQVzgy3f9rgAT51yfNOBi0SFwnSsgP&amp;index=1">Watch this video</a> to learn more about the powerful network hospital search capability on MediBuddy to avail a cashless hospitalization.</p>
+                    <h4>eCashless</h4>
+                    <p>eCashless from Medi Assist is a whole new way of experiencing cashless hospitalization. eCashless gives you the power to get a provisional preauthorization even before you walk into the hospital.</p>
+                    <ol>
+                        <li>Book your cashless admission on your mobile phone.</li>
+                        <li>Get a provisional approval before date of admission.</li>
+                        <li>Walk in with a secure passcode and claim your preauthorization.</li>
+                        <li>Enjoy a truly green channel experience at your hospital.</li>
+                    </ol>
+                    <p><a href="https://www.youtube.com/watch?v=T1zfNkHjcUs&amp;list=PLZdcQVzgy3f9rgAT51yfNOBi0SFwnSsgP&amp;index=8">Watch this video</a> to know how eCashless works and read these <a href="https://www.mediassistindia.com/ecashless/#toggle-id-1">FAQs</a> to learn more.</p>
+                    <h4>Reimbursement claims</h4>
+                    <p>
+                        Reimbursement  claims may be filed in the case of hospitalization at a non-network hospital or  for post-hospitalization and pre-hospitalization expenses. Click <a href="https://www.mediassistindia.com/insured/#toggle-id-10">here</a> for details of  submitting a reimbursement claim.
+                        <br>
+                        MediBuddy allows you to submit your reimbursement claim online. <a href="https://www.youtube.com/watch?v=b-wkrUai_dI&amp;list=PLv3bUn7TYmSIf9T4EUtQCICSsRIixn8PF&amp;index=4">Watch this video</a> to learn more about online claim submission.
+                    </p>
+                    <h4>Track Claims in real-time</h4>
+                    <p>MediBuddy allows you to  track your claim in real-time, anytime and from anywhere – just click the Claims  tile to check your claim status. Additionally, Medi Assist sends SMS  notifications throughout the lifecycle of your claim that keeps you updated on  your claim status. Want your claim status right now? <a href="https://track.medibuddy.in/">Click here</a> to  get started.</p>
+                </div>
+                <div class="tab-pane fade in" id="faq3">
+                    <p>MediBuddy is a great place  to make healthy living a habit. </p>
+                    <ul>
+                        <li>Get your daily health tip on  to start your day with a healthy dose of health. Click the <a href="https://m.medibuddy.in/HealthTips.aspx">Health Tips</a> menu on your MediBuddy.</li>
+                        <li>Learn something new on a range of<a href="http://blogs.medibuddy.in/health-and-wellness/"> health and wellness topics</a>.</li>
+                        <li>Begin your tryst with fitness with <a href="http://www.mobiefit.com/">mFitness apps</a> from Mobiefit. Walking, running or body building – take your pick. </li>
+                        <li>Choose your preferred outpatient service on <a href="https://www.medibuddy.in/">MediBuddy</a>, India’s first curated network for cashless outpatient services.&nbsp; </li>
+                    </ul>
+                    <h3>MediBuddy</h3>
+                    <p>
+                        <a href="https://www.medibuddy.in/">MediBuddy</a> is India’s first curated network for cashless outpatient services. Featuring top hospitals  and diagnostic centres, on Infiniti you will be able to compare and choose from <strong>health screening packages, lab tests,  consultation with doctors, prescription medicines</strong> and so much more. We  leverage our strong partnership with leading hospitals and diagnostic centres  to get deep discounts on the MRP of the packages and medicines listed on MediBuddy.  All services covered under your insurance policy can be made cashless.<br>
+                    </p>
+                    <p><a href="https://www.medibuddy.in/">Click here</a> to start exploring or visit the <a href="https://www.medibuddy.in/offers">Offers</a> page to view the latest offers waiting to be availed. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="IBMPopUp" role="dialog" style="display: none;" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content PopUpcontents">
+                
+                <div class="modal-body">
+                    <p>Enrolment page is under construction in preparation for 2018 policy. Please write to<b> ibmcare@mediassistindia.com </b>or call us at <b>1800 419 5860 </b>for any emergency. You will be able to log back on 1st Jan 2018! </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="NetSolPopUp" role="dialog" style="display: none;" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content PopUpcontents">
+                
+                <div class="modal-body">
+                    <p>Enrolment page is under construction in preparation for 2018 policy. Please write to <b>netsol@mediassistindia.com </b>or call us at <b>1800 419 5862 </b>for any emergency. You will be able to log back on 1st Jan 2018!  </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/vendors/jquery/jquery-1.10.2.min.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var SSOCorpUrlMapping = '{"saplabs":"https://ap.benefitsasia.com/SAPIN","sapindia":"https://ap.benefitsasia.com/SAPIN","sap":"https://ap.benefitsasia.com/SAPIN","sap.com":"https://ap.benefitsasia.com/SAPIN","honeywell":"https://cwa.honeywell.com/idp/startSSO.ping?PartnerSpId=https://sso.medibuddy.in/","hccb":"https://biginhubsso.coca-cola.in/adfs/ls/idpinitiatedsignon?loginToRp=https://sso.medibuddy.in","tatatech":"https://fedservices01.tatatechnologies.com/adfs/ls/idpinitiatedsignon?loginToRp=https://sso.medibuddy.in","tatatechnology":"https://fedservices01.tatatechnologies.com/adfs/ls/idpinitiatedsignon?loginToRp=https://sso.medibuddy.in","mediassist":"https://one.mediassistindia.com/adfs/ls/idpinitiatedsignon?loginToRp=https://sso.medibuddy.in","mediassistindia":"https://one.mediassistindia.com/adfs/ls/idpinitiatedsignon?loginToRp=https://sso.medibuddy.in","mediassistindia.com":"https://one.mediassistindia.com/adfs/ls/idpinitiatedsignon?loginToRp=https://sso.medibuddy.in","mahs":"https://one.mediassistindia.com/adfs/ls/idpinitiatedsignon?loginToRp=https://sso.medibuddy.in","mahs.in":"https://one.mediassistindia.com/adfs/ls/idpinitiatedsignon?loginToRp=https://sso.medibuddy.in","mediassist.com":"https://one.mediassistindia.com/adfs/ls/idpinitiatedsignon?loginToRp=https://sso.medibuddy.in","cognizant":"https://myapps.microsoft.com/signin/Medibuddy-Production/64819a52-d715-424f-aad8-f525485210d1?whr=cognizant.com","cognizant.com":"https://myapps.microsoft.com/signin/Medibuddy-Production/64819a52-d715-424f-aad8-f525485210d1?whr=cognizant.com","inmobi":"https://login.corp.inmobi.com/saml/saml2/idp/metadata.php","oracle.com":"https://login-stage.oracle.com/oamfed/idp/initiatesso?providerid=https://sso.medibuddy.in/","infy":"https://stsakaash.infosys.com/adfs/ls/idpinitiatedsignon.aspx?loginToRP=https://sso.medibuddy.in/","infosys":"https://stsakaash.infosys.com/adfs/ls/idpinitiatedsignon.aspx?loginToRP=https://sso.medibuddy.in/","infosys.com":"https://stsakaash.infosys.com/adfs/ls/idpinitiatedsignon.aspx?loginToRP=https://sso.medibuddy.in/","wipro":"https://wipfs01.wipro.com/adfs/ls/idpinitiatedsignon.aspx?loginToRp=HR%20MediBuddy","olacabs":"https://olacabs.okta.com/app/olaanitechnologiespvtltdprod_mediassistportal_1/exkcluzm8aGt3aFCr0x7/sso/saml","olacabs.com":"https://olacabs.okta.com/app/olaanitechnologiespvtltdprod_mediassistportal_1/exkcluzm8aGt3aFCr0x7/sso/saml","ola.com":"https://olacabs.okta.com/app/olaanitechnologiespvtltdprod_mediassistportal_1/exkcluzm8aGt3aFCr0x7/sso/saml","tcs":"https://auth.ultimatix.net/utxLogin/login?TYPE=33554432&REALMOID=06-9374027c-7828-4b8f-9228-94f04c85cf02&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-k3NCKvCkroes4pEwq0AQwup2pCbB6XRbHfApTf6UwdEA2%2bwhWWoUw07LXypODrCb&TARGET=-SM-HTTPS%3a%2f%2fauthapp%2eultimatix%2enet%2fultimatix%2fredirect%2fredirect%2ejsp%3fSAMLRequest%3dfZJPT8JAEMW-%2FSrP3-%2FqUtugEShBhJUBtAD17M0k5lk-%2B1u3dkCfnu3rSge4NZMZ-%2Bb93psdIatETaeN2ckVfDaAxlnMx-%2BQ9iG8hSQHcBODGjfNt4t6mw9CNyiQqWFDGgzImzito5EqOSeQFxFkgNrCQaJg0thSEQzdI3CjdBCkNUzqIvSQJ34gztypcMtNN7oypkfo-%2Bswisrr1GGF7Zf0dPgvFZWR5gi6D3PAf062YreO630BGiIs690jl09GNSMoHQUmQMke-%2Fht5JpZVSuxB2XBZcfY9JoSRVDjlSyCpCanK6nj0tqXdBt34T0YbPJ3Ox5vSHOFC1BiztTEpsK9LoHelkt-%2FwzwQ-%2B1VUPBWvPVnvzoL7Wb-%2F0gbiHCshkXZnuA5W-%2F7ggk1HbTbu09dn89XF2IiCTE7FN8DLxyD9T6SVr-%2BmTXLuaZskf4arO3h7qsGnphV-%2BGFW3atFCrGxbQoNCDaVIVQh5kGZuypjG5sGP6kl-%2F3-%2FIiff%26SMPORTALURL%3dhttps-%3A-%2F-%2Fauthapp%2eultimatix%2enet-%2Faffwebservices-%2Fpublic-%2Fsaml2sso","tcs.com":"https://auth.ultimatix.net/utxLogin/login?TYPE=33554432&REALMOID=06-9374027c-7828-4b8f-9228-94f04c85cf02&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-k3NCKvCkroes4pEwq0AQwup2pCbB6XRbHfApTf6UwdEA2%2bwhWWoUw07LXypODrCb&TARGET=-SM-HTTPS%3a%2f%2fauthapp%2eultimatix%2enet%2fultimatix%2fredirect%2fredirect%2ejsp%3fSAMLRequest%3dfZJPT8JAEMW-%2FSrP3-%2FqUtugEShBhJUBtAD17M0k5lk-%2B1u3dkCfnu3rSge4NZMZ-%2Bb93psdIatETaeN2ckVfDaAxlnMx-%2BQ9iG8hSQHcBODGjfNt4t6mw9CNyiQqWFDGgzImzito5EqOSeQFxFkgNrCQaJg0thSEQzdI3CjdBCkNUzqIvSQJ34gztypcMtNN7oypkfo-%2Bswisrr1GGF7Zf0dPgvFZWR5gi6D3PAf062YreO630BGiIs690jl09GNSMoHQUmQMke-%2Fht5JpZVSuxB2XBZcfY9JoSRVDjlSyCpCanK6nj0tqXdBt34T0YbPJ3Ox5vSHOFC1BiztTEpsK9LoHelkt-%2FwzwQ-%2B1VUPBWvPVnvzoL7Wb-%2F0gbiHCshkXZnuA5W-%2F7ggk1HbTbu09dn89XF2IiCTE7FN8DLxyD9T6SVr-%2BmTXLuaZskf4arO3h7qsGnphV-%2BGFW3atFCrGxbQoNCDaVIVQh5kGZuypjG5sGP6kl-%2F3-%2FIiff%26SMPORTALURL%3dhttps-%3A-%2F-%2Fauthapp%2eultimatix%2enet-%2Faffwebservices-%2Fpublic-%2Fsaml2sso","idfcbank":"https://ssooam.idfcbank.com/oam/fed","idfcbank.com":"https://ssooam.idfcbank.com/oam/fed","lilly":"https://federate.xh1.lilly.com/idp/startSSO.ping?PartnerSpId=https://sso.medibuddy.in/","lilly.com":"https://federate.xh1.lilly.com/idp/startSSO.ping?PartnerSpId=https://sso.medibuddy.in/","adobe":"https://adobe.okta.com/home/template_saml_2_0/0oa17bu09miFycEw80h8/3079","adobe.com":"https://adobe.okta.com/home/template_saml_2_0/0oa17bu09miFycEw80h8/3079"}';
+        $(document).ready(function () {
+            placeholders();
+            var Empusername = '';
+            if (Empusername != '') {
+                $('#username').val(Empusername);
+            }
+        });
+
+        var st = 0;
+        $('#signinBtn').click(function (event) {
+            event.preventDefault();
+            $("#ErrorMsg").html('');
+            $("#ErrorMsgAuth").html('');
+            $("#signinBtn").toggleClass('active');
+            if ($.trim($("#username").val()) == "" || $.trim($("#password").val()) == "") {
+                $("#signinBtn").removeClass('active');
+                $("#ErrorMsg").html('Please enter valid credentials.');
+                return false;
+            }
+            else {
+                $('#ErrorMsg').html(' ');
+                $("#MediForm").submit();
+            }
+        });
+
+        function placeholders() {
+            $("form input:text").each(function () {
+                $(this).val($(this).attr("placeholder"));
+            });
+            $(":text").focus(function () {
+                if ($(this).val() == $(this).attr("placeholder")) {
+                    $(this).val("");
+                }
+            });
+
+            $(":text").blur(function () {
+                if ($(this).val() == "") {
+                    $(this).val($(this).attr("placeholder"));
+                }
+            });
+
+            $("form input:password").each(function () {
+                $(this).val($(this).attr("placeholder"));
+            });
+            $(":password").focus(function () {
+                if ($(this).val() == $(this).attr("placeholder")) {
+                    $(this).val("");
+                }
+            });
+
+            $(":password").blur(function () {
+                if ($(this).val() == "") {
+                    $(this).val($(this).attr("placeholder"));
+                }
+            });
+        };
+
+        $(document).on('click', '.slide-box-open', function () {
+            $('.slideBox').hide().css({ 'width': 0 });
+            $('body').css({ 'overflow': 'hidden' });
+            var thisLink = $(this).attr('rel');
+            var thisWidth = $(this).attr('data-width');
+            $(thisLink).show().animate({ width: '100%' }, 200);
+
+            if (!thisWidth) {
+                $(thisLink + ' .slideContent').animate({ width: 600 }, 200);
+            }
+            else {
+                $(thisLink + ' .slideContent').animate({ width: thisWidth }, 200);
+            }
+            $('.slideBox .slideBg').click(function () {
+                $(this).parent().animate({ width: 0 }, 300).hide();
+                $('body').css({ 'overflow': 'auto' });
+            });
+            $('.slideHeading a').click(function () {
+                $(this).parent().parent().parent('.slideBox').animate({ width: 0 }, 100).hide();
+                $('body').css({ 'overflow': 'auto' });
+            });
+        });
+
+        function checkSSOCorproateorNot() {
+            var username = $('#username').val();
+            var empname = "";
+            var corpname = "";
+            if (username != null && username != "") {
+                var mapping = JSON.parse(SSOCorpUrlMapping);
+                empname = username.toLowerCase()
+                corpname = username.toLowerCase();
+                if (username != '' && username.indexOf('@') > -1) {
+                    empname = username.split('@')[0].toLowerCase()
+                    corpname = username.split('@')[1].toLowerCase();
+                }
+                if (mapping != null && empname.indexOf('hr') <= -1 && empname.indexOf('test') <= -1 && mapping[corpname] != null
+                    && mapping[corpname] != ""
+                    && mapping[corpname] !== undefined
+                    && corpname.indexOf(mapping[corpname]) >= -1) {
+                    $('#ErrorMsg').html('This functionality has been disabled for your corporate. Please <a href="' + mapping[corpname] + '"> Click here</a> to login through your corporate portal to access MediBuddy.');
+                    $('#lblpassword').hide();
+                    $('#password').hide();
+                    $('#signinBtn').hide();
+                    $('#ForgotCredentials').hide();
+                }
+                else {
+                    $('#ErrorMsg').html('');
+                    $('#lblpassword').show();
+                    $('#password').show();
+                    $('#signinBtn').show();
+                    $('#ForgotCredentials').show();
+                }
+            }
+        }
+    </script>
+
+    <footer>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-76809224-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+    </footer>
+</body>
+
+</html>
